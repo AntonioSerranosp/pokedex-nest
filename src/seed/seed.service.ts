@@ -4,6 +4,9 @@ import { PokeResponse } from './interfaces/poke-response.interfaces';
 
 @Injectable()
 export class SeedService {
+  /**
+   * just a comment
+   */
   private readonly axios: AxiosInstance = axios;
   async executeSeed() {
     const { data } = await this.axios.get<PokeResponse>(
